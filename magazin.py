@@ -45,16 +45,13 @@ class Seller():
             print("Sorry no products now")
 
     def add_products(self):
-        isrepeated= True
+        isrepeated = True
         id = int(input("please enter id: "))
         name = input("please enter name: ")
         price = int(input("please enter price: "))
 
-        product = Product(id,name,price)
+        product = Product(id, name, price)
         product_list.append(product)
-
-
-
 
     def sold_proucts(self):
         if len(sold_product_list) > 0:
@@ -76,11 +73,9 @@ while stop != True:
 
     login = input("please enter login : ")
     password = input("please enter password: ")
-    if seller.login == '1' and seller.password == '1':
+    if seller.login == login and seller.password == password:
         print("You entered account succesfully")
         while stop != True:
-
-
 
             print("""
                             1. Sell 
